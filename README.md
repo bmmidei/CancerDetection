@@ -1,8 +1,14 @@
 # CancerDetection
-This repo is a development space for the Kaggle Competition on cancer detection.
+This repo is a development space for the Kaggle Competition on cancer detection. The goal is to identify metastatic
+cancer in images of digital pathology scans. Our methodology is to use a 3-layer convolutional neural network with
+a binary output to classify these images.
+
 More information on the competition can be found [here](https://www.kaggle.com/c/histopathologic-cancer-detection/)
 
 ## Results
+We were able to achieve an ROC score of 0.82. This score does not place us in the top percentage of competition
+entrants. However, as TensorFlow users, our goal was to learn some of the nuances of PyTorch implementations of 
+neural networks. To this end, we have succeeded. 
 
 ## Reproducing Results
 
@@ -29,8 +35,10 @@ of this repository. With your new environment active, use the following command 
 pip install -r /path/to/req.txt
 ```
 
-
 ## Built With
+* [PyTorch](https://pytorch.org/) - The Neural Network framework used
+* [NumPy](http://www.numpy.org/) - Matrix operations and linear algebra
+* [Pandas](https://pandas.pydata.org/) - Data preparation
 
 ## Authors
 
@@ -40,6 +48,3 @@ pip install -r /path/to/req.txt
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-## Acknowledgments
-
